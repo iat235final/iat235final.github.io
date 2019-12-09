@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/8889bc4751.js" crossorigin="anonymous"></script>
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+     <!--JQuery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Chart JS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <!--Custom JS Files-->
+    <script defer src="scripts/drugtypes_chart.js"></script>
+    
+    <title>Types of Drugs</title>
+  </head>
+<body>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:#303030;z-index:99999999999999999999999">
+        <a class="navbar-brand" href="#">
+        
+          <i class="fas fa-capsules fa-lg" style="color:#ff9336;padding-left:60px;"></i></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="narrative.html">Narrative of a Drug User</a>
+              </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="typesofdrugs.html">Types of Drugs</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="harm_reduction.html">Harm Reduction</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="case_studies.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Case Studies
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="case_studies.html#bruno">Bruno</a>
+                  <a class="dropdown-item" href="case_studies.html#pedro">Pedro</a>
+                  <a class="dropdown-item" href="case_studies.html#elvira">Elvira</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="case_studies.html">All Case Studies</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="criticisms.html">Criticisms</a>
+              </li>
+          </ul>
+              <ul class="navbar-nav ml-auto" style="padding-left:60px;">
+                  <li class="nav-item">
+                      <a class="nav-link" href="citations.html">Citations</a>
+                    </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/codemist/iat235finalproject">Github</a>
+                  </li>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="background:#ffb370;">
+            <h1 class="title padding-content-right"  style="-webkit-text-stroke: 5px #fffaf5;font-size:2em;margin-top:50px;">
+                Types of Drugs
+            </h1>
+            <h5 class="text-justify padding-content-right" style="font-size:0.9em;color:#272727;font-weight:400;margin-top:20px;;line-height:160% !important; width:50%;padding-bottom:40px;">
+                    The most recent general population survey shows that cannabis remains the most frequently used illicit substance in Portugal, followed by MDMA/ecstasy and cocaine. Use of illicit substances is more common among young adults (aged 15-34 years). The available data indicate an increase in last year and last month cannabis use during the period 2012-16, mainly among those aged between 25 and 44 years.
+            
+                </h5>
+            </div>
+        </div>
+
+        <div class="row" style="margin:0 auto;width:50%;margin-top:50px;">
+            <h4 style="padding-bottom:50px;color:#303030;">What are the most common drugs used in Portugal?</h4>
+            <br><br>
+            <canvas id="drugtypes_chart" height="150"></canvas>
+            <br><br>
+            <h6 class="text-justify" style="font-size:0.9em;font-weight:400;line-height:160%;padding-bottom:40px;">
+                    The most recent general population survey shows that cannabis remains the most frequently used illicit substance in Portugal, followed by MDMA/ecstasy and cocaine. Use of illicit substances is more common among young adults (aged 15-34 years). The available data indicate an increase in last year and last month cannabis use during the period 2012-16, mainly among those aged between 25 and 44 years.
+            
+                </h6>
+        </div>
+
+        <div class="row" style="margin:0 auto;width:50%;margin-top:50px;">
+            <h4 style="padding-bottom:50px;color:#303030;">Common Drug Classifications</h4>
+        </div>
+        
+        <div class="row" style="width:80%;">
+            <div class="col-6">
+                <img src="images/weed.png" class="drugimg">
+            </div>
+            <div class="col-6"> <h3 style="font-weight:700;letter-spacing:1px;color:#3cba9f;margin-top:45px;">CANNABIS</h3>
+                <h5 style="font-weight:700;color:#328d79;font-size:0.9em;text-transform:uppercase;letter-spacing:1px">
+                Common types: Hashish, Edibles, Oil, Marijuana</h5>
+                <h5 style="font-weight:700;color:#3cb6ba;font-size:0.9em;text-transform:uppercase;letter-spacing:1px">
+                Effect: Depressant, Relaxing, Sedative</h5>
+                <h6 class="text-justify" style="font-size:0.9em;font-weight:400;line-height:160%;padding-top:5px;"></h6>
+                Cannabis, also known as marijuana among other names, is a psychoactive drug from the Cannabis plant used for medical or recreational purposes. The main psychoactive part of cannabis is tetrahydrocannabinol.
+                </h6></div>
+        </div>
+
+        <div class="row" style="width:80%;margin-top:50px;">
+            <div class="col-6">
+                    <img src="images/heroin.png" class="drugimg">
+                </div>
+                <div class="col-6"> <h3 style="font-weight:700;letter-spacing:1px;color:#e8c3b9;margin-top:45px;">HEROIN</h3>
+                
+                    <h5 style="font-weight:700;color:#c28d7e;font-size:0.9em;text-transform:uppercase;letter-spacing:1px">
+                            Common types: Black tar Heroin, Fentanyl, Oil, Carfentanyl</h5>
+                            <h5 style="font-weight:700;color:#cfb592;font-size:0.9em;text-transform:uppercase;letter-spacing:1px">
+                            Effect: Euphoric, Relaxing, Numbing</h5>
+
+                    <h6 class="text-justify" style="font-size:0.9em;font-weight:400;line-height:160%;margin-left:20px;"></h6>
+                    Heroin is an illegal, highly addictive drug processed from morphine, a naturally occurring substance extracted from the seed pod of certain varieties of poppy plants. It is typically sold as a white or brownish powder that is "cut" with sugars, starch, powdered milk, or quinine. 
+                </h6></div>
+            </div>
+
+        <div class="row" style="width:80%;margin-top:50px;">
+            <div class="col-6">
+                    <img src="images/cocaine.png" class="drugimg">
+                </div>
+                <div class="col-6"> <h3 style="font-weight:700;letter-spacing:1px;color:#3e95cd;margin-top:45px;">COCAINE</h3>
+                    <h5 style="font-weight:700;color:#3379a5;font-size:0.9em;text-transform:uppercase;letter-spacing:1px">
+                            Common types: Base form (crack), cocaine hydrochloride</h5>
+                            <h5 style="font-weight:700;color:#3e70cd;font-size:0.9em;text-transform:uppercase;letter-spacing:1px">
+                            Effect: Stimulant, Euphoric, Reduced Appetite</h5>
+
+
+                    <h6 class="text-justify" style="font-size:0.9em;font-weight:400;line-height:160%;margin-left:20px;"></h6>
+                    Cocaine, also known as coke, is a strong stimulant most frequently used as a recreational drug. It is commonly snorted, inhaled as smoke, or dissolved and injected into a vein. Mental effects may include loss of contact with reality, an intense feeling of happiness, or agitation. 
+                </h6></div>
+            </div>
+        
+        <div class="row" style="width:80%;margin-top:50px;">
+            <div class="col-6">
+                    <img src="images/meth.png" class="drugimg">
+                </div>
+                <div class="col-6"> <h3 style="font-weight:700;letter-spacing:1px;color:#d26ce1;margin-top:45px;">AMPHETAMINES</h3>
+                    <h5 style="font-weight:700;color:#a353af;font-size:0.9em;text-transform:uppercase;letter-spacing:1px">
+                            Common types: Methamphetamine, Adderall, Ritalin</h5>
+                            <h5 style="font-weight:700;color:#e16cb0;font-size:0.9em;text-transform:uppercase;letter-spacing:1px">
+                            Effect: Stimulant, Focus, Paranoia</h5>
+
+                    <h6 class="text-justify" style="font-size:0.9em;font-weight:400;line-height:160%;margin-left:20px;"></h6>
+                    Amphetamine is a central nervous system stimulant that is used in the treatment of attention deficit hyperactivity disorder, narcolepsy, and obesity. 
+                    Methamphetamine is an addictive, potent central nervous system stimulant that is mainly used as a recreational drug.
+                </h6></div>
+            </div>
+        
+        <div class="row" style="width:80%;margin-top:50px;padding-bottom:100px;">
+            <div class="col-6">
+                    <img src="images/lsd.png" class="drugimg">
+                </div>
+                <div class="col-6"> <h3 style="font-weight:700;letter-spacing:1px;color:#ff6479;margin-top:45px;">PSYCHEDLICS</h3>
+                    <h5 style="font-weight:700;color:#c24b5b;font-size:0.9em;text-transform:uppercase;letter-spacing:1px">
+                            Common types: MDMA, LSD, Psilocybin</h5>
+                            <h5 style="font-weight:700;color:#ff8864;font-size:0.9em;text-transform:uppercase;letter-spacing:1px">
+                            Effect: Euphoric, Hallucinogenic, Stimulant</h5>
+
+                    <h6 class="text-justify" style="font-size:0.9em;font-weight:400;line-height:160%;margin-left:20px;"></h6>
+                    Psychedelic drugs, also known as hallucinogenic drugs, or simply hallucinogens, are a group of substances, including chemicals, such as LSD, and plants, such as peyote, that are usually used recreationally, to change and enhance sensory perceptions, thought processes, energy levels, and to facilitate spiritual experiences.
+                </h6></div>
+            </div>
+
+               
+     <div class="row footer">
+      
+        <div class="col-5" style="padding-top:50px;padding-left:100px;">
+          <h3 style="text-transform:uppercase;letter-spacing:1px;font-weight:500;font-size:0.9em;color:white;">Drug Decriminalisation in Portugal</h3>
+          
+          <h5 class="text-justify" style="font-size:0.7em;color:#ffffff;font-weight:400;margin-top:10px;;line-height:160% !important; width:80%;">
+              This is my final project for IAT 235, Information Design on Portugal's drug decriminalization - illustrating
+              its effect since the policy was imposed as well as related facets of the matter.
+  
+            <br><br>
+            <p style="color:#b4b4b4;">Copyright © Kaitlyn Andres | 301374745</p>
+          </h5>
+        </div>
+  
+        <div class="col-3" style="padding-top:50px;padding-left:200px;">
+            <h3 style="text-transform:uppercase;letter-spacing:1px;font-weight:500;font-size:0.9em;color:white;">
+            LINKS
+            </h3>
+            <div class="links" style="font-size:0.8em;color:rgb(211, 211, 211);">
+            <a href="narrative.html">Narrative of a Drug User</a>
+            <a href="typesofdrugs.html">Types of Drugs</a>
+            <a href="harm_reduction.html">Harm Reduction</a>
+            </div>
+          
+          </div>
+  
+          <div class="col-3 mr-auto" style="padding-top:50px;">
+              
+              <div class="links" style="font-size:0.8em;color:rgb(211, 211, 211);padding-top:25px;">
+              <a href="criticisms.html">Criticisms</a>
+              <a href="case_studies.html">Case Studies</a>
+              <a href="citations.html">Citations</a>
+              </div>
+            
+            </div>
+  
+        </div>
+
+    </div>
+
+<!--Javascript-->
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+    

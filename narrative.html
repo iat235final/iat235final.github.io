@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/8889bc4751.js" crossorigin="anonymous"></script>
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+     <!--JQuery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Custom JS Files-->
+    <script src="scripts/narrative_switch.js"></script>
+    
+    <title>Narrative of a Drug User</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:#303030;z-index:99999999999999999999999">
+        <a class="navbar-brand" href="#">
+        
+          <i class="fas fa-capsules fa-lg" style="color:#ff9336;padding-left:60px;"></i></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="narrative.html">Narrative of a Drug User</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typesofdrugs.html">Types of Drugs</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="harm_reduction.html">Harm Reduction</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="case_studies.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Case Studies
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="case_studies.html#bruno">Bruno</a>
+                  <a class="dropdown-item" href="case_studies.html#pedro">Pedro</a>
+                  <a class="dropdown-item" href="case_studies.html#elvira">Elvira</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="case_studies.html">All Case Studies</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="criticisms.html">Criticisms</a>
+              </li>
+          </ul>
+              <ul class="navbar-nav ml-auto" style="padding-left:60px;">
+                  <li class="nav-item">
+                      <a class="nav-link" href="citations.html">Citations</a>
+                    </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/codemist/iat235finalproject">Github</a>
+                  </li>
+            </ul>
+          </ul>
+        </div>
+      </nav>  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:#303030;">
+                <a class="navbar-brand" href="#"><i class="fas fa-capsules fa-lg" style="color:#ff9336;"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Narrative of a Drug User</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Harm Reduction</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Case Studies
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="case_studies.html">Mario</a>
+                        <a class="dropdown-item" href="case_studies.html">Other dude</a>
+                        <a class="dropdown-item" href="case_studies.html">Other dude</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="case_studies.html">All Case Studies</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Disadvantages</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ways to Help</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-12" style="background:#ffb370;">
+        <h1 class="title padding-content-right" style="-webkit-text-stroke: 5px #fffaf5;font-size:2em;margin-top:50px;">
+            Narrative of a Drug User
+        </h1>
+        <h5 class="text-justify padding-content-right" style="font-size:0.9em;color:#272727;font-weight:400;margin-top:20px;;line-height:160% !important; width:50%;padding-bottom:40px;">
+            Ever thought what it was like to be a drug user in Portugal?
+            To illustrate the differences between the way Portugal deals with its drug problem 
+            as compared to the rest of the world who have not adopted a drug decriminalization 
+            policy, an interactive model is shown below. <br><p></p>
+
+            Simply <b>toggle the button</b> to compare Portugal's
+            drug policy from the instance of discovering drug possession to the steps that are
+            taken after with countries that do not practice drug decrminalisation, namely the 
+            United States.
+    
+  
+        </h5>
+        </div>
+    </div>
+    <div class="row"> 
+      <div class="col-12 text-center" style="width:100%;padding-top:30px;padding-bottom:20px;background-color:#ffca99;">
+          <table style="margin-left:auto; 
+          margin-right:auto;">
+            <td>
+              <h4 style="padding-right:20px;" class="portugal_title">Portugal</h4>
+            
+            </td>
+            <td>
+            <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox"/>
+                <div class="slider round"></div>
+              </label>
+              </td>
+            <td>
+              <h4 style="padding-left:20px;" class="us_title">United States</h4>
+
+          </td>
+          </table>
+
+      </div>
+      </div>
+    
+        <div class="row"> 
+        <div class="col-12">
+        <img src="images/portugal_narrative.svg" class="portugal_narrative" style="width:80%;margin-left:10%;margin-top:20px;">
+        <img src="images/us_narrative.svg" class="us_narrative" style="width:80%;margin-left:10%;margin-top:20px;">
+        </div>
+    </div>
+
+    <div class="row">
+        <h6 class="text-justify" style="margin:0 auto;
+        width:62%;font-weight:400;line-height:160%;padding-top:60px;padding-bottom:60px;">
+
+Decades ago, the United States and Portugal both struggled with illicit drugs and took decisive action – in diametrically opposite directions. The US cracked down vigorously, spending billions of dollars incarcerating drug users. In contrast, Portugal undertook a monumental experiment: it decriminalised the use of all drugs in 2001, even heroin and cocaine, and unleashed a major public health campaign to tackle addiction. Ever since, in Portugal, drug addiction has been treated more as a medical challenge than as a criminal justice issue.
+<br><br>
+After more than 15 years, it’s clear which approach worked better. The US drug policy has failed spectacularly, with about as many Americans dying last year of overdoses – around 64,000 – as were killed in the Vietnam, Afghanistan and Iraq Wars combined.
+<br><br>
+In contrast,<b> Portugal may be winning the war on drugs</b> – by ending it. Today, the Health Ministry estimates that only about 25,000 Portuguese use heroin, down from 100,000 when the policy began.
+<br><br>
+The number of Portuguese dying from overdoses plunged more than 85 per cent, before rising a bit in the aftermath of the European economic crisis of recent years. Even so, Portugal’s drug mortality rate is the lowest in Western Europe – one-tenth the rate of Britain or Denmark – and about one-fiftieth of the latest number in the US. . . .
+<br><br>
+It’s not a miracle or perfect solution. But if the US could achieve Portugal’s death rate from drugs, they would save one life every 10 minutes. They would save almost as many lives as are now lost to guns and car accidents combined.
+              </h6>
+    </div>
+
+       
+    <div class="row footer">
+      
+        <div class="col-5" style="padding-top:50px;padding-left:100px;">
+          <h3 style="text-transform:uppercase;letter-spacing:1px;font-weight:500;font-size:0.9em;color:white;">Drug Decriminalisation in Portugal</h3>
+          
+          <h5 class="text-justify" style="font-size:0.7em;color:#ffffff;font-weight:400;margin-top:10px;;line-height:160% !important; width:80%;">
+              This is my final project for IAT 235, Information Design on Portugal's drug decriminalization - illustrating
+              its effect since the policy was imposed as well as related facets of the matter.
+  
+            <br><br>
+            <p style="color:#b4b4b4;">Copyright © Kaitlyn Andres | 301374745</p>
+          </h5>
+        </div>
+  
+        <div class="col-3" style="padding-top:50px;padding-left:200px;">
+            <h3 style="text-transform:uppercase;letter-spacing:1px;font-weight:500;font-size:0.9em;color:white;">
+            LINKS
+            </h3>
+            <div class="links" style="font-size:0.8em;color:rgb(211, 211, 211);">
+            <a href="narrative.html">Narrative of a Drug User</a>
+            <a href="typesofdrugs.html">Types of Drugs</a>
+            <a href="harm_reduction.html">Harm Reduction</a>
+            </div>
+          
+          </div>
+  
+          <div class="col-3 mr-auto" style="padding-top:50px;">
+              
+              <div class="links" style="font-size:0.8em;color:rgb(211, 211, 211);padding-top:25px;">
+              <a href="criticisms.html">Criticisms</a>
+              <a href="case_studies.html">Case Studies</a>
+              <a href="citations.html">Citations</a>
+              </div>
+            
+            </div>
+  
+        </div>
+
+</div>
+
+
+
+<!--Javascript-->
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+    

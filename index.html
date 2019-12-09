@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <title>Drug Decriminalisation in Portugal</title>
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/8889bc4751.js" crossorigin="anonymous"></script>
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Chart JS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <!--Custom JS Files-->
+    <script defer src="scripts/interactive_chart.js"></script>
+    <script src="scripts/scroll_function.js"></script>
+
+  </head>
+  <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:#303030;z-index:99999999999999999999999">
+            <a class="navbar-brand" href="#">
+            
+              <i class="fas fa-capsules fa-lg" style="color:#ff9336;padding-left:60px;"></i></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="narrative.html">Narrative of a Drug User</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="typesofdrugs.html">Types of Drugs</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="harm_reduction.html">Harm Reduction</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="case_studies.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Case Studies
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="case_studies.html#bruno">Bruno</a>
+                      <a class="dropdown-item" href="case_studies.html#pedro">Pedro</a>
+                      <a class="dropdown-item" href="case_studies.html#elvira">Elvira</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="case_studies.html">All Case Studies</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="criticisms.html">Criticisms</a>
+                  </li>
+              </ul>
+                  <ul class="navbar-nav ml-auto" style="padding-left:60px;">
+                      <li class="nav-item">
+                          <a class="nav-link" href="citations.html">Citations</a>
+                        </li>
+                      <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/codemist/iat235finalproject">Github</a>
+                      </li>
+                </ul>
+              </ul>
+            </div>
+          </nav>
+          
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-5" style="height:100vh;background-color:#ffb370;z-index:99999999">
+           <div class="col-left" style="padding-top:200px;">
+              <h1 class="title">
+                <p style="text-align:left">Drug</p>
+                <p style="margin-top:-5px;">Decriminalisation</p>
+                <p style="text-align:right">in Portugal</p> 
+              </h1>
+              &nbsp;
+                <h5 class="text-justify desc" style="font-size:0.8em;color:#3a3a3a;font-weight:400;padding:10px;line-height:160%;">
+                 
+                  In 2001, Portugal was experiencing an opioid-involved overdose crisis. The country used criminalization 
+                  and incarceration to try to manage drug use, while HIV rates among people who use 
+                  drugs were the <b>highest in Europe</b>. 
+    
+                  In response to this emergency, Portugal launched
+                  its decriminalization program that year, and the rest is history. Overdose deaths 
+                  have <b>plummeted by 80 percent</b>, while the percentage of drug users diagnosed with new 
+                  HIV infections fell from 52 percent in 2000 to 7 percent in 2015. Rates of problematic 
+                  drug use and drug-related incarceration have also fallen, while numbers of people voluntarily 
+                  entering treatment for substance use issues have increased.
+ 
+                </h5>
+              </div> 
+                
+            </div>
+
+          <div class="col-7" style="overflow:hidden;height:100vh;z-index:0;">
+
+              <div id="extension_card" >
+                  <div class="card text-black shadow p-3" style="background:#ff9870;">
+                      <div class="card-body">
+                          <p class="text-right">
+                          <a href="javascript:void(0)" class="closebtn" onclick="closeCard()" style="color:#ffffff;position:absolute;margin-top:-10px;">×</a>
+                        </p>
+        
+                          <h5 class="card-title" style="font-size:0.8em;text-transform:uppercase;letter-spacing:1px;font-weight:700;">OVERVIEW</h5>
+                         
+
+                        <p class="card-text">
+                        <h5 style="font-size:0.6em;font-weight:700;color:#141313;">HIV CASES<h5>
+                        <h6 style="font-size:0.8em;font-weight:100;">Dropped from <span style="font-weight:500;">52%</span> to <span style="font-weight:500;">6%</span></h6>
+                        &nbsp;
+                        <h5 style="font-size:0.6em;font-weight:700;color:#141313;">OVERDOSE CASES<h5>
+                        <h6 style="font-size:0.8em;font-weight:100;">Dropped by <span style="font-weight:500;">80%</span></h6>
+                        &nbsp;
+                        <h5 style="font-size:0.6em;font-weight:700;color:#141313;">MORTALITY RATE<h5>
+                        <h6 style="font-size:0.8em;font-weight:100;">5.8 deaths/million in 2015,
+                            compared to the European average of 20.3 deaths/million</h6>
+                        </p>
+                      </div>
+                    </div>
+                </div>
+                
+                <button id="extension_btn" onclick="openCard()" class="shadow"><i class="fas fa-bars" style="color:#ffffff;margin-left:-10px;"></i></button>  
+                
+                <script>
+                      document.getElementById("extension_btn").style.left = "15px";
+                  document.getElementById("extension_card").style.left = "-300px";
+                
+                  function openCard() {
+                  document.getElementById("extension_card").style.opacity = "1";
+                  document.getElementById("extension_card").style.left = "330px";
+                  document.getElementById("extension_btn").style.left = "265px";
+                  document.getElementById("extension_btn").style.opacity = "0";
+                }
+                
+                function closeCard() {
+                  document.getElementById("extension_card").style.opacity = "0";
+                  document.getElementById("extension_btn").style.opacity = "1";
+                  document.getElementById("extension_card").style.left = "0px";
+                  document.getElementById("extension_btn").style.left = "15px";
+                }
+                </script>
+          <img src="images/portugal.jpg" style="width:160%;margin-left:-15px;">          
+
+          </div>
+        </div>
+
+        <div class="row sliding_row" style="margin-top:100px;padding-bottom:100px;">
+        <div class="col-6">
+            <canvas id="interactive_chart" style="margin-left:80px;" height="200"></canvas>
+        </div>
+        <div class="col-6">
+          
+          <div style="margin-left:80px;">
+          <h1 class="title" style="-webkit-text-stroke: 5px #ffc18a;font-size:2em;">POLICY EFFECTIVENESS</h1>
+          
+          <div style="padding-top:10px;">
+          <h6 style="color:#303030;">Select a chart to view</h6>
+          <p>
+          <button id="show_od" type="button" class="btn btn-info" style="font-size:0.9em">Overdoses</button>
+          <button id="show_hiv" type="button" class="btn btn-info" style="font-size:0.9em">HIV Diagnosed</button>
+          <button id="show_aids" type="button" class="btn btn-info" style="font-size:0.9em">AIDS Diagnosed</button>
+        </p>
+
+        </div>
+          <h5 class="text-justify" style="font-size:0.9em;color:#3a3a3a;font-weight:400;margin-top:10px;line-height:160% !important; width:80%;">
+              According to EMCDDA (European Monitoring Centre for Drugs and Drug Addiction), it can be shown
+              that drug use and prevalance has decreased from the time the policy was put into place in 2001.
+              This trend can be marked in this analysis through 3 datasets: number of drug related overdoses,
+              the increase of drug-related infectious diseases (HIV and AIDS). Data on drug-related infectious 
+              diseases are available from drug treatment facilities and provide 
+              insights into some subgroups of drug users: (i) those demanding treatment for the first time at 
+              the public network of outpatient treatment facilities; (ii) those admitted to public detoxification 
+              treatment units or certified private detoxification units; and (iii) those in treatment in public or 
+              certified private therapeutic communities.
+
+          </h5>
+          </div>
+        </div>
+        </div>
+
+
+        
+     <div class="row footer">
+      
+      <div class="col-5" style="padding-top:50px;padding-left:100px;">
+        <h3 style="text-transform:uppercase;letter-spacing:1px;font-weight:500;font-size:0.9em;color:white;">Drug Decriminalisation in Portugal</h3>
+        
+        <h5 class="text-justify" style="font-size:0.7em;color:#ffffff;font-weight:400;margin-top:10px;;line-height:160% !important; width:80%;">
+            This is my final project for IAT 235, Information Design on Portugal's drug decriminalization - illustrating
+            its effect since the policy was imposed as well as related facets of the matter.
+
+          <br><br>
+          <p style="color:#b4b4b4;">Copyright © Kaitlyn Andres | 301374745</p>
+        </h5>
+      </div>
+
+      <div class="col-3" style="padding-top:50px;padding-left:200px;">
+          <h3 style="text-transform:uppercase;letter-spacing:1px;font-weight:500;font-size:0.9em;color:white;">
+          LINKS
+          </h3>
+          <div class="links" style="font-size:0.8em;color:rgb(211, 211, 211);">
+          <a href="narrative.html">Narrative of a Drug User</a>
+          <a href="typesofdrugs.html">Types of Drugs</a>
+          <a href="harm_reduction.html">Harm Reduction</a>
+          </div>
+        
+        </div>
+
+        <div class="col-3 mr-auto" style="padding-top:50px;">
+            
+            <div class="links" style="font-size:0.8em;color:rgb(211, 211, 211);padding-top:25px;">
+            <a href="criticisms.html">Criticisms</a>
+            <a href="case_studies.html">Case Studies</a>
+            <a href="citations.html">Citations</a>
+            </div>
+          
+          </div>
+
+      </div>
+
+      </div>
+
+        
+
+<!--Javascript-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
